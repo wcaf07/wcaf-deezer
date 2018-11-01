@@ -1,5 +1,5 @@
 //
-//  wcafDeezerTests.swift
+//  ArtistMusicViewModelTests.swift
 //  wcafDeezerTests
 //
 //  Created by Filho, Wanderley de C. on 31/10/18.
@@ -9,7 +9,7 @@
 import XCTest
 @testable import wcafDeezer
 
-class wcafDeezerTests: XCTestCase {
+class ArtistMusicViewModelTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -18,18 +18,12 @@ class wcafDeezerTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func test_artist_vc_title() {
-        let artistVC = ArtistListViewController()
-        artistVC.viewDidLoad()
-        
-        XCTAssertEqual("Artistas", artistVC.navigationItem.title)
-    }
     
-    func test_artist_vc_placeholder() {
-        let artistVC = ArtistListViewController()
-        artistVC.viewDidLoad()
+    func test_music_vm_format_time() {
+        let musicPopulated = ["duration" : 200, "title" : "music", "preview" : "preview", "id" : 12] as [String: Any]
+        let music: Music = Music(json: musicPopulated)!
+        let musicVM: ArtistMusicsViewModel = ArtistMusicsViewModel()
         
-        XCTAssertEqual("Pesquisar artistas", artistVC.searchController.searchBar.placeholder)
+        XCTAssertEqual("3:20", musicVM.convertToMinutes(time: music.duration))
     }
 }

@@ -22,6 +22,8 @@
 		BE2CAB42218A4A5B003D040D /* ArtistMusicsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CAB41218A4A5B003D040D /* ArtistMusicsTableViewController.swift */; };
 		BE2CAB44218A4B30003D040D /* ArtistMusicsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CAB43218A4B30003D040D /* ArtistMusicsViewModel.swift */; };
 		BE2CAB47218A580E003D040D /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CAB46218A580E003D040D /* MusicTableViewCell.swift */; };
+		BE2CAB5A218A946C003D040D /* ArtistListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CAB59218A946C003D040D /* ArtistListViewModelTests.swift */; };
+		BE2CAB5C218A9754003D040D /* ArtistMusicViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2CAB5B218A9754003D040D /* ArtistMusicViewModelTests.swift */; };
 		E10B82D589F5D824717068DD /* Pods_wcafDeezerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 490019A3237610A15413AC7F /* Pods_wcafDeezerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,8 @@
 		BE2CAB41218A4A5B003D040D /* ArtistMusicsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistMusicsTableViewController.swift; sourceTree = "<group>"; };
 		BE2CAB43218A4B30003D040D /* ArtistMusicsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistMusicsViewModel.swift; sourceTree = "<group>"; };
 		BE2CAB46218A580E003D040D /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		BE2CAB59218A946C003D040D /* ArtistListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistListViewModelTests.swift; sourceTree = "<group>"; };
+		BE2CAB5B218A9754003D040D /* ArtistMusicViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistMusicViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,8 @@
 			children = (
 				BE2CAB282189FB0B003D040D /* wcafDeezerTests.swift */,
 				BE2CAB2A2189FB0B003D040D /* Info.plist */,
+				BE2CAB59218A946C003D040D /* ArtistListViewModelTests.swift */,
+				BE2CAB5B218A9754003D040D /* ArtistMusicViewModelTests.swift */,
 			);
 			path = wcafDeezerTests;
 			sourceTree = "<group>";
@@ -372,7 +378,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE2CAB5C218A9754003D040D /* ArtistMusicViewModelTests.swift in Sources */,
 				BE2CAB292189FB0B003D040D /* wcafDeezerTests.swift in Sources */,
+				BE2CAB5A218A946C003D040D /* ArtistListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
